@@ -15,7 +15,7 @@ public class BuildABear {
     //ENCAPSULATION: keep variables PRIVATE (they can't be directly accessed outside of this CLASS)
     
     //2. CONSTRUCTORS (initalize values)
-
+    
 
     //3. METHODS (behaviors/actions)
 }
