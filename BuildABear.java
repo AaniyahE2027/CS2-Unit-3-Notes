@@ -22,7 +22,7 @@ public BuildABear() {
     this.name = "Tony";
     this.fillLevel = 75;
     this.price = 150.00;
-    this.hasSpeaker = false;
+    this.hasSoundSpeaker = false;
     this.recording = "";
 }
 // PARAMETERIZED CONSTRUCTOR allows user to provide args
@@ -32,7 +32,7 @@ public BuildABear(String t, String n, int fl) {
     this.name = n;
     this.fillLevel = fl;
     this.price = 150.00;
-    this.hasSpeaker = false;
+    this.hasSoundSpeaker = false;
     this.recording = "";
 }
 
@@ -50,4 +50,16 @@ public BuildABear(String t, String n, int fl) {
     public double getPrice(){
         return price;
     }
-}
+
+    // write a toString() method so that we can print an object's STATE
+    // including this method changes what happens when you print an object
+    // otherwise, doing System.out.println(object) just shows a memory location
+    public String toString(){
+        String state = "BUILDABEAR[" + type + "," + name + "," + fillLevel + "," + price + "]";
+        return state;
+    }
+
+
+
+
+}//end class

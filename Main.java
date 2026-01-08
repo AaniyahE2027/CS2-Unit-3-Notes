@@ -10,7 +10,11 @@ public class Main {
       //All objects can be created using this pattern:
       // ClassName objectName = new ClassName();
       BuildABear hero = new BuildABear();
+      //"BuildABear kitty" is DECLARING a varible of type BuildABear
+      //"new BuildABear()" is CALLING a CONSTRUCTOR to set up the object
 
+      //Look at our new object
+      System.out.println(hero);
 
    }//dont delete
 }//dont delete
