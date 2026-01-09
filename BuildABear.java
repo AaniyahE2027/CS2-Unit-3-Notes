@@ -59,6 +59,18 @@ public BuildABear(String t, String n, int fl) {
         return state;
     }
 
+    //MUTATOR ("setters") are void, but accept an argument to chnage
+    // the value of an object's instance variable to something new
+    
+    //only need setters for variables you want the user to change
+    public void setName(String newName){
+        //assign the object's name to the new value
+        this.name = newName;
+    }
+    public void setFillLevel(int newFillLevel){
+        this.fillLevel = newFillLevel;
+    }
+
 
 
 
