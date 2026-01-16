@@ -13,6 +13,12 @@ public class BuildABear {
     private boolean hasSoundSpeaker;
     private String recording;
     //ENCAPSULATION: keep variables PRIVATE (they can't be directly accessed outside of this CLASS)
+    // they cannot be directly accesseed outside of 
+    //this java CLASS (data is protected from users)
+
+    //STATIC VARIABLES belong to general Class
+    private static String storeLocation = "Murray Hill";
+    private static int inventoryCount = 50;
     
     //2. CONSTRUCTORS (initalize values)
     //Default constuctors does not take any arguments (no-arg)
@@ -27,6 +33,7 @@ public BuildABear() {
 }
 // PARAMETERIZED CONSTRUCTOR allows user to provide args
 // user PASSES initial values to the constructor call
+
 public BuildABear(String t, String n, int fl) {
     this.type = t; // USER picked the value for type!
     this.name = n;
@@ -70,6 +77,12 @@ public BuildABear(String t, String n, int fl) {
     }
     public void setFillLevel(int newFillLevel){
         this.fillLevel = newFillLevel;
+    }
+
+    // STATIC METHODS are behaviors that belong to the Class
+    // (do not depend on specific object instances)
+    public static void showStore(){
+        System.out.println ("Welcome to " + storeLocation + " Build A Bear Workshop!");
     }
 
 
